@@ -1,0 +1,76 @@
+body, main {
+    display: flex;
+}
+body {
+    flex-direction: column;
+    background-image: linear-gradient(to right, #280000, #080000, #180000);
+    color: whitesmoke;
+}
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: aliceblue;
+}
+a:hover {
+    color: ivory;
+    border-bottom: 5px solid #d00;
+}
+a:link {
+    color: seashell;
+}
+
+header ul li {
+    color: white;
+    font-size: 1.25em;
+}
+header ul li a:visited {
+    color: white;
+    font-size: 1.25em;
+}
+header ul li a:hover {
+    color: white;
+    font-size: 1.25em;
+}
+/* I chose these arrows because they clash into each other, kind of like two fighters would. */
+#unicode-logo {
+    font-size: 2em;
+}
+main {
+    flex-direction: row;
+    flex: auto;
+}
+h1, h2, h3, h4 {
+    text-align: center;
+}
+h1, h2, h3 {
+    text-decoration: underline rgb(255,255,240);
+}
+/* Looks better over embedded Tweets on tweets.html */
+.left-align {
+    text-align: left;
+}
+/* This shouldn't change the layout strategy, it should just center the photos instead of aligning left */
+.img-center-home {
+    display: flex;
+    justify-content: center;
+}
+a:hover.img-center-home {
+    border-bottom: none;
+}
+
+article {
+    flex: 2;
+    overflow-y: auto;
+}
+aside {
+    flex: 1;
+    overflow-y: auto;
+}
+
+/* Makes the font bigger on smaller devices */
+@media screen and (max-width: 768px) {
+    p {
+        font-size: 1.45em;
+    }
+}
